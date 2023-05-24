@@ -1,13 +1,7 @@
-# Data types
+print('HELLO');
 
 
-# string
-'Hello'
-# integer
+int = 21;
 
-1221;
-
-new2c =  'ijlal';
-print(21+2)
-print(new2c);
-
+print(str(int));
+int = 21;
