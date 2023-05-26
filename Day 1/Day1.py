@@ -11,6 +11,6 @@ pet_Name = input('Whats your pet name? \n');
 
 
 
-print('your BandName could be ' + city_Name + pet_Name );
+print(f"your BandName could be  { city_Name + pet_Name}" );
 
 
