@@ -7,21 +7,23 @@ sec_num = int(y)
 choose_Operator = input('please choose the operator  ' + ' +  -  / * \n')
 
 if  choose_Operator == '+' :{
-print(first_num + sec_num)
+print(f" THe sum is {first_num + sec_num}")
   
 }
 elif  choose_Operator == '-' :{
-print(first_num - sec_num)  
+print(f"THe subtraction is {first_num - sec_num}")  
     
 };
 elif  choose_Operator == '/' :{
-print(first_num / sec_num)  
+print(f"The divison is { first_num / sec_num}")  
     
 }
 elif  choose_Operator == '*' :{
-print(first_num * sec_num) 
+print(f"The multiplication is { first_num * sec_num}") 
     
 }      
 else :{
-print('please choose a valid operation')
+print('please choose a valid operation'+"+ - / *")
 }  
+
+
