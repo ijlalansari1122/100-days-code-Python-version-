@@ -1,12 +1,8 @@
-import hashlib
 
+Data =[ 1,3,4,5,6, 32,323]
 
+Data.count(0);
 
-Data =[str(input('data 1'),input('data 2'),input('data 3'),input('data 4'))]
+print(Data)
 
-for i in Data:
-    
-    hashed =hashlib.sha256(Data.encode()).hexdigest()
-    print(hashed) 
-    
     
