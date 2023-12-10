@@ -1,11 +1,9 @@
+
 #  Bmi calculator
 
 Height = float(input('please enter your height in m:'))
 
 Weight = float(input('please enter your weight in kg:'))
-
-Bmi = int(Weight)/float(Height)**2
-print('the bmi is'  , int(Bmi))
 
 
 def Bmi_cal(height , weight):
