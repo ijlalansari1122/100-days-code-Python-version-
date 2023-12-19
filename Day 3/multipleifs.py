@@ -50,12 +50,12 @@
 data = [22,1,3,5,6,8,4,3323,232]
 #
 
-def random(x=data ,y=data):
+def random(x ,y):
     x1 = max(x)
     y2 = min(y)
     return x1, y2
 
 
-called =random()
+fn_called =random(data,data)
 
-print(f'the maximum number is  {called}')
+print(f'the maximum number is  {fn_called}')
