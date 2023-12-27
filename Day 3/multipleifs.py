@@ -46,16 +46,39 @@
 #
 #
 #
-# sorting bubble
-data = [22,1,3,5,6,8,4,3323,232]
+# # sorting bubble
+# data = [22,1,3,5,6,8,4,3323,232]
+# #
 #
+# def random(x ,y):
+#     x1 = max(x)
+#     y2 = min(y)
+#     return x1, y2
+#
+#
+# called =random(data,data)
+#
+# print(f'the maximum number is  {called}')
 
-def random(x=data ,y=data):
-    x1 = max(x)
-    y2 = min(y)
-    return x1, y2
 
 
-called =random()
 
-print(f'the maximum number is  {called}')
+
+
+# values swapped
+
+a =3 # tea
+b=2  # water
+
+c=a
+b=a
+c=b
+a=b
+del c
+
+print(a,b)
+
+
+
+del c
+print(a,b)
