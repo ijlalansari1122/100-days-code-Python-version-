@@ -65,20 +65,13 @@
 
 
 
-# values swapped
-
-a =3 # tea
-b=2  # water
-
-c=a
-b=a
-c=b
-a=b
-del c
-
-print(a,b)
 
 
 
-del c
-print(a,b)
+
+
+year = int(input('please enter a year'))
+
+if year%4 == 0:
+   print('good')
+else : print('bad')
