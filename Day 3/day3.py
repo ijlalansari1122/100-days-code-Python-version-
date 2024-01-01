@@ -66,7 +66,7 @@ if add_pepporoni == 'Y' and size == 'S':
 
 
 
-elif add_pepporoni == 'Y' and size == 'M' or  add_pepporoni == 'Y' and size == 'L':
+elif  add_pepporoni == 'Y' and size == 'M' or  add_pepporoni == 'Y' and size == 'L':
     bill += 3
     print('Adding pepporani for medium and large pizza will cost $3 ')
 
