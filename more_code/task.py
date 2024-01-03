@@ -1,75 +1,35 @@
-# Number guessing game
 import random
 
 attempts = 0
 
-difficulty_level = input('please choose your difficulty level: E = Easy  , N = Normal , M = Medium  and  H = Hard ')
+difficulty_level = input('Please choose your difficulty level: E = Easy, N = Normal, M = Medium, H = Hard ')
 
-#  Function for difficulty setter
-
-if difficulty_level== 'E' :
-        number_ = random.randint(0, 10)
-elif difficulty_level ==   'N':
-        number_ =  random.randint(0, 500)
-
-elif difficulty_level ==  'M':
-        number_=  random.randint(0, 1000)
-
+# Function for difficulty setter
+if difficulty_level == 'E':
+    number_to_guess = random.randint(0, 10)
+    print("Difficulty: Easy")
+elif difficulty_level == 'N':
+    number_to_guess = random.randint(0, 500)
+    print("Difficulty: Normal")
+elif difficulty_level == 'M':
+    number_to_guess = random.randint(0, 1000)
+    print("Difficulty: Medium")
 elif difficulty_level == 'H':
-         number_ = random.randint(0, 5000)
+    number_to_guess = random.randint(0, 5000)
+    print("Difficulty: Hard")
+else:
+    print("Invalid difficulty level. Please choose E, N, M, or H.")
+    exit()
 
-else: print("please choose from E , N , M , H" )
- # while loop and if else for number guessing functionility
-#
+# Number guessing loop
 while True:
-    number_guess = int(input("please enter the number "))
-    attempts +=1
+    number_guess = int(input("Please enter your guess: "))
+    attempts += 1
 
-    if  number_guess == number_ :
-        print(f"Congratulations ! You have generated the number in {attempts} attempts! ")
-
-
-    elif  number_guess < number_:
-           print("To low try again.")
+    if number_guess == number_to_guess:
+        print(f"Congratulations! You guessed the number in {attempts} attempts.")
+        break
+    elif number_guess < number_to_guess:
+        print("Too low! Try again.")
     else:
-        print("To low try again.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        print("Too high! Try again.")
