@@ -33,5 +33,3 @@ datadict={'name': 'ijlal' , 'age': 23 , 'grade':['a' , 'B', 'C']}
 
 # function
 
-
-def calculate_average (data):
