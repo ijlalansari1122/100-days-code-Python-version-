@@ -14,14 +14,14 @@
 import math
 
 
-number = int(input('please enter the number for operation'))
+number = int(input('please enter the number to start fibonacci sequence  '))
 def fibonacci(x):
-     for i in range(1, x + 1):
-        print(f'{i} squared is {pow(i, 2)}')
+   while True:
+         for i in range(x, x+2):
+          print(f'the fibonacci sequence is ',i)
 
 
 
 
 end_result = fibonacci(number)
 
-print('the fibonacci result')
