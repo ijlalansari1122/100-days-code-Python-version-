@@ -22,7 +22,7 @@ if [ -n "$changes" ]; then
     # Push to the current branch
     git push origin "$branch"
 
-    echo "Changes committed and pushed successfully."
+    echo "This is automated script all changes committed and pushed successfully."
 else
     echo "No changes detected. Nothing to commit or push."
 fi

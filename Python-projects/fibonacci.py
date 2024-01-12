@@ -1,27 +1,12 @@
-# this program will  calculate fibonacci sequence ...
-
-
-# algorithm
+# fibonacci sequence
 
 
 
+fibonacci_sequence = [0, 1]
+n = int(input('please specify how many numbers do you want to generate  '))
 
+for i in range(2, n):
+    summed = sum(fibonacci_sequence[-1], fibonacci_sequence[-2])
+    fibonacci_sequence.append(summed)
 
-
-
-
-
-import math
-
-
-number = int(input('please enter the number to start fibonacci sequence  '))
-def fibonacci(x):
-   while True:
-         for i in range(x, x+2):
-          print(f'the fibonacci sequence is ',i)
-
-
-
-
-end_result = fibonacci(number)
-
+print('the fibonacci sequence is', fibonacci_sequence)
