@@ -15,7 +15,11 @@ def check_http_status(x):
             print('not found')
 
 
-check_http_status(http_status)
+# check_http_status(http_status)
 
 
+list =[1,2,3,4]
 
+for i in list:
+    list.append(12)
+    print(list)
