@@ -1,5 +1,4 @@
 # This code will be used for making a calculator
-import math
 
 num1 =int(input("please enter first number "))
 
@@ -8,7 +7,7 @@ num2 =int(input("please enter second number "))
 op =input("please choose operator + - / *  ")
 
 
-def calculator(x):
+def calculator(x,num1,num2):
  match x:
     case '+':
        sum = num1 +num2
@@ -26,5 +25,4 @@ def calculator(x):
           print(f'the divided value of the numbers is {divided} ')
          else:print('the divison by zero is not allowed ')
 
- calculator(op)
-
+calculator(op,num1,num2)
