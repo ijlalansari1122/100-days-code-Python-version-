@@ -30,7 +30,14 @@ scissors = '''
 game_images = [rock, paper, scissors]
 
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
-user_value = game_images[user_choice]
+
+if user_choice < 0 or user_choice > 2:
+    print("the user value is out of range")
+
+else:
+  user_value = game_images[user_choice]
+        
+    
 
 print("you choose", user_value)
 
@@ -40,11 +47,10 @@ computer_value = game_images[computer_choice]
 
 print("Computer chose:", game_images[computer_choice])
 
-if user_value >= '3':
-    print('this value is not valid')
-elif user_value > computer_value:
-    print('you win')
-elif computer_value > user_value:
-    print('you lose')
-elif computer_value == user_value:
-    print('its a draw')
+if user_choice == computer_choice:
+        print("It's a draw")
+elif (user_choice == 0 and computer_choice == 2) or  (user_choice == 1 and computer_choice == 0) or (user_choice == 2 and computer_choice == 1):
+        print("You win!")
+else:
+        print("You lose")
+

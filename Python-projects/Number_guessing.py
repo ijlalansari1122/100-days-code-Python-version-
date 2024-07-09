@@ -2,29 +2,29 @@ import random
 
 attempts = 0
 
-difficulty_level = input('Please choose your difficulty level: E = Easy, N = Normal, M = Medium, H = Hard ')
+difficulty_level = input('Please choose your difficulty level: e = easy, n = normal, m = medium, h = hard ')
 
 # Function for difficulty setter
-if difficulty_level == 'E':
+if difficulty_level == 'e':
     number_to_guess = random.randint(0, 10)
-    print("Difficulty: Easy")
-elif difficulty_level == 'N':
+    print("Difficulty: easy")
+elif difficulty_level == 'n':
+    number_to_guess = random.randint(0, 50)
+    print("Difficulty: normal")
+elif difficulty_level == 'm':
+    number_to_guess = random.randint(0, 100)
+    print("Difficulty: medium")
+elif difficulty_level == 'h':
     number_to_guess = random.randint(0, 500)
-    print("Difficulty: Normal")
-elif difficulty_level == 'M':
-    number_to_guess = random.randint(0, 1000)
-    print("Difficulty: Medium")
-elif difficulty_level == 'H':
-    number_to_guess = random.randint(0, 5000)
-    print("Difficulty: Hard")
+    print("Difficulty: hard")
 else:
-    print("Invalid difficulty level. Please choose E, N, M, or H.")
+    print("Invalid difficulty level. Please choose your difficulty level: e = easy, n = normal, m = medium, h = hard.")
     exit()
 
 # Number guessing loop
 while True:
     number_guess = int(input("Please enter your guess: "))
-    attempts += 1
+    attempts =attempts + 1
 
     if number_guess == number_to_guess:
         print(f"Congratulations! You guessed the number in {attempts} attempts.")

@@ -8,9 +8,7 @@ todo_list = []
 try:
     while True:
         # While loop will be used for iterating through the match statment
-        choose = int(input(
-            "please choose your action: 1 = view todo list  2 =add task 3 = mark task as done 4 = remove task 5 = "
-            "quit  "))
+        choose = int(input("please choose your action: 1 = view todo list  2 =add task 3 = mark task as done 4 = remove task 5 =  quit  \n"))
 
         match choose:
             case 1:
@@ -22,18 +20,17 @@ try:
 
             case 3:
                 task_done = int(input('please specify which task has been completed '))
-                if 1 <= task_done < len(todo_list):
+                if 1 <= task_done <= len(todo_list):
                     todo_list[task_done - 1] = 'Done'
                     print('the updated list is', todo_list)
                 else:
-                    print('invalid index')
+                    print('please choose relevant index')
 
                 print('the list after completing a task is ', todo_list)
 
             case 4:
-                remove_task = int(input('please specify which task you want to remove : 1 = first task and so '
-                                        'on....'))
-                if 1 <= remove_task < len(todo_list):
+                remove_task = int(input('please specify which task you want to remove : 1 = first task and so on....'))
+                if 1 <= remove_task <= len(todo_list):
                     remove_item = todo_list.pop(remove_task - 1)
                     print('the removed item is', remove_item)
                     print('the list after removing element is ', todo_list)
@@ -45,7 +42,8 @@ try:
                     print('invalid element')
 
             case 5:
-                print('the program will terminate now ', exit())
+                print('the program will terminate now ')
+                break
 
             case _:
                 print('please choose valid value')
