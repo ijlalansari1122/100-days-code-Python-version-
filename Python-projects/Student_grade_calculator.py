@@ -39,9 +39,6 @@ def student_data():
     return data   
     
     
-    
-# print("the student data is ", student_data());    
-    
 
 
 
@@ -54,7 +51,7 @@ def  Student_average(data):
     
     if no_of_students == 0:
         
-        print("please enter some student data",student_data())
+        print("please enter some student data")
         
     average =total_marks/no_of_students
     
@@ -74,10 +71,12 @@ def  student_marks(data):
         
       return None
          
-    highest_marks = max(data.values())
+    else:
+        
+     highest_marks = max(data.values())
     
         
-    lowest_marks = min(data.values())
+     lowest_marks = min(data.values())
     
     
     return highest_marks , lowest_marks
