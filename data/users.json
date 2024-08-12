@@ -2,5 +2,9 @@
     "lalo": {
         "password": "lalo123",
         "role": "admin"
+    },
+    "user": {
+        "password": "$2b$12$XjgRPL8CR.i.IDjWiJcg4.y3H7.OjteGrjb6FxkR.hcxJudZwMkbW",
+        "role": "user"
     }
 }

@@ -1,5 +1,7 @@
 import random
 
+
+print("Welcome to Number guessing game....  ")
 attempts = 0
 
 difficulty_level = input('Please choose your difficulty level: e = easy, n = normal, m = medium, h = hard ')
@@ -19,7 +21,7 @@ elif difficulty_level == 'h':
     print("Difficulty: hard")
 else:
     print("Invalid difficulty level. Please choose your difficulty level: e = easy, n = normal, m = medium, h = hard.")
-    exit()
+    
 
 # Number guessing loop
 while True:
